@@ -1,0 +1,15 @@
+public class Vip extends Ingresso {
+
+    private String setor;
+
+    public Vip(String filme, double valor, String setor) {
+        super(filme, valor);
+        this.setor = setor;
+    }
+
+    // Sobrescrita: mesma assinatura, comportamento especializado
+    @Override
+    public double valorFinal() {
+        return valor + 15;
+    }
+}
